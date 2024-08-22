@@ -12,7 +12,7 @@ import numpy as np
 import pickle
 
 app = Flask(__name__)
-filename = 'cancer_model.pkl'
+filename = 'DTC_model.pkl'
 model = pickle.load(open(filename, 'rb'))
 
 @app.route('/')
@@ -47,3 +47,7 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+!pip show scikit-learn
+
+!pip install scikit-learn==1.3.2
