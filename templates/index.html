@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cancer Prediction</title>
+</head>
+<body>
+	<form action="/predict" autocomplete="on" method="POST">
+		Clump_thickness: <input type="number" name="Clump_thickness"><br>
+		Uniformity_of_cell_size: <input type="number" name="Uniformity_of_cell_size"><br>
+		Uniformity_of_cell_shape: <input type="number" name="Uniformity_of_cell_shape"><br>
+		Marginal_adhesion: <input type="number" name="Marginal_adhesion"><br>
+		Single_cell_epithelial_size: <input type="number" name="Single_cell_epithelial_size"><br>
+		Bare_nuclei: <input type="number" name="Bare_nuclei"><br>
+		Bland_chromatin: <input type="number" name="Bland_chromatin"><br>
+		Normal_nucleoli: <input type="number" name="Normal_nucleoli"><br>
+		<button type="submit">Predict</button>
+	</form>
+    <p>My prediction: {{ prediction }}</p>
+</body>
+</html>
