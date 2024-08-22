@@ -47,7 +47,3 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-!pip show scikit-learn
-
-!pip install scikit-learn==1.3.2
